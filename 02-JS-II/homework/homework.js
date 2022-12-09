@@ -23,16 +23,17 @@ function devolverString(str) {
   function resta(x, y) {
     // Resta "y" de "x" y devuelve el valor
     // Tu código:
+    var quitar = x -y;
   
-    return x - y ;
+    return quitar ;
 
   }
   
   function multiplica(x, y) {
     // Multiplica "x" por "y" y devuelve el valor
     // Tu código:
-    var multiplica = x * y;
-    return multiplica;
+    var multiplicador = x * y;
+    return multiplicador;
 
   }
   
@@ -109,7 +110,7 @@ function devolverString(str) {
     // Devuelve "true" si "num" es impar
     // De lo contrario, devuelve "false"
     // Tu código:
-    if((num % 2) > 0) { return true}
+    if((num % 2)!== 0) { return true}
     else
     {return false;}
   }
@@ -118,7 +119,9 @@ function devolverString(str) {
     // Devuelve el valor de "num" elevado al cuadrado
     // ojo: No es raiz cuadrada!
     // Tu código:
-    return num ** 2;
+    // return num ** 2;
+    return Math.pow(num, 2)
+
 
   }
   
@@ -158,33 +161,60 @@ function devolverString(str) {
 
   }
   
+  // function esPositivo(numero) {
+  //   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo.
+  //   //Si el número es positivo, devolver ---> "Es positivo"
+  //   //Si el número es negativo, devolver ---> "Es negativo"
+  //   //Si el número es 0, devuelve false
+  //   // Tu código:
+      
+    
+  //   if (numero > 0) {
+  //     return "Es positivo"
+  //   } else if (numero < 0) {
+  //     return "Es negativo"
+  //   } else if (numero === 0){
+  //     return false;
+    
+  //    }
+  // }
+
   function esPositivo(numero) {
     //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo.
     //Si el número es positivo, devolver ---> "Es positivo"
     //Si el número es negativo, devolver ---> "Es negativo"
     //Si el número es 0, devuelve false
     // Tu código:
-      
-    
-    if (numero > 0) {
-      return "Es positivo"
-    } else if (numero < 0) {
-      return "Es negativo"
-    } else if (numero === 0){
-      return false;
-    
+    if(numero > 0){
+       return "Es positivo"
+    }
+    else if(numero < 0) {
+         return "Es negativo"
      }
-  }
+    else if(numero === 0) {
+                return false
+            }
+       
+    }
 
-  
+
   
   function agregarSimboloExclamacion(str) {
     // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
     // Ejemplo: "hello world" pasaría a ser "hello world!"
     // Tu código:
     return str + "!";
+}
+  // 
+// OTRA FORMA 
+//   function agregarSimboloExclamacion(str) {
+//     // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
+//     // Ejemplo: "hello world" pasaría a ser "hello world!"
+//     // Tu código:
+//     var adic = str + "!";
+//     return adic;
 
-  }
+// }
   
   function combinarNombres(nombre, apellido) {
     // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
@@ -201,7 +231,16 @@ function devolverString(str) {
     return "Hola" + " " + nombre + "!";
 
   }
+  // otra forma
+//   function obtenerSaludo(nombre) {
+//     // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
+//     // "Martin" -> "Hola Martin!"
+//     // Tu código:
 
+// var saludo = "Hola" + " " +  nombre + "!";
+// return saludo;
+
+// }
   
   function obtenerAreaRectangulo(alto, ancho) {
     // Retornar el area de un rectángulo teniendo su altura y ancho

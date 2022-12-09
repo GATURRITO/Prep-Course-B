@@ -7,6 +7,7 @@
         <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
         <br>
         Haz click acá para dejar tu feedback sobre esta clase.
+        
       </a>
     </td>
   </tr>
@@ -122,7 +123,7 @@ for(var clave in usuario){
 // nombre
 // "Andres"
 // contraseña
-// "hola123"
+// "hola123"W
 // edad
 // 26
 // online
@@ -156,6 +157,7 @@ Realiza los ejercicios propuestos en el archivo `homework.js` de esta misma carp
 ## Recursos adicionales
 
 * [MDN: Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
 * [MDN: this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
 * [MDN: for...in Loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
 * [Codecademy: Learn Javascript](https://www.codecademy.com/learn/learn-javascript)

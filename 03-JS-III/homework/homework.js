@@ -106,8 +106,8 @@ function sumaArray(array){
 function numeroDigitos(num){
   // Devuelve el número de dígitos de un número dado
   // Tu código:
-   var numerosEnString = num.toString()
-    var longitud = numerosEnString.length
+   
+    var longitud = num.toString().length
     return longitud;
 
 

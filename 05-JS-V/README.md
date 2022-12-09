@@ -180,7 +180,7 @@ Para solucionar esto, agregamos al prototipo los métodos de Persona, para esto 
 
 ``` javascript
 // usamos `Object.create` porque este guardaba el argumento pasado como `__proto__` del objeto a retornar
-Alumno.prototype = Object.create(Persona.prototype)
+Alumno.prototype = Object.create(Persona.prototype)  // var obj = Object.create(Object.prototype)
 
 // recordemos que el objeto prototype siempre tenía una propiedad constructor que hacía referencia a la función en sí; con la asignación que hicimos arriba lo pisamos, por lo que deberíamos volver a agregarlo.
 Alumno.prototype.constructor = Alumno
